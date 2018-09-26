@@ -48,6 +48,9 @@ public class DrawerActivity extends BaseActivity implements View.OnClickListener
                         Intent intent = new Intent("cn.istary.broadcastforceoffline.FORCE_OFFLINE");
                         sendBroadcast(intent);
                         break;
+                    case R.id.nav_datasave_demo:
+                        Intent intent1 = new Intent(DrawerActivity.this, DataSaveDemoActivity.class);
+                        startActivity(intent1);
                     default:
                         drawerLayout.closeDrawers();
                         break;

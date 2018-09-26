@@ -24,5 +24,7 @@
             android:id="@+id/nav_offline"
             android:icon="@drawable/nav_task"
             android:title="ForceOffline" />
+        <item android:id="@+id/nav_datasave_demo"
+            android:title="@string/datasave_demo"/>
     </group>
 </menu>

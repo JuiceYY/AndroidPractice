@@ -68,4 +68,5 @@ public class BaseActivity extends AppCompatActivity {
             builder.show();
         }
     }
+
 }
