@@ -31,7 +31,8 @@
         </activity>
         <activity android:name=".DataSaveDemoActivity" />
         <activity android:name=".WebviewActivity" />
-        <activity android:name=".HttpActivity"></activity>
+        <activity android:name=".HttpActivity" />
+        <activity android:name=".AsyncHandlerActivity"></activity>
     </application>
 
 </manifest>

@@ -17,9 +17,9 @@
             android:icon="@drawable/nav_location"
             android:title="Location" />
         <item
-            android:id="@+id/nav_mail"
+            android:id="@+id/nav_asynchandler"
             android:icon="@drawable/nav_mail"
-            android:title="Mail" />
+            android:title="AsyncHandler" />
         <item
             android:id="@+id/nav_offline"
             android:icon="@drawable/nav_task"

@@ -51,6 +51,10 @@ public class DrawerActivity extends BaseActivity implements View.OnClickListener
                     case R.id.nav_datasave_demo:
                         Intent intent1 = new Intent(DrawerActivity.this, DataSaveDemoActivity.class);
                         startActivity(intent1);
+                    case R.id.nav_asynchandler:
+                        Intent intent2 = new Intent(DrawerActivity.this, AsyncHandlerActivity.class);
+                        startActivity(intent2);
+
                     default:
                         drawerLayout.closeDrawers();
                         break;
