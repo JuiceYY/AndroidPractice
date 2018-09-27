@@ -54,6 +54,9 @@ public class DrawerActivity extends BaseActivity implements View.OnClickListener
                     case R.id.nav_asynchandler:
                         Intent intent2 = new Intent(DrawerActivity.this, AsyncHandlerActivity.class);
                         startActivity(intent2);
+                    case R.id.nav_myservice:
+                        Intent intent3 = new Intent(DrawerActivity.this, TestMyServiceActivity.class);
+                        startActivity(intent3);
 
                     default:
                         drawerLayout.closeDrawers();

@@ -32,7 +32,14 @@
         <activity android:name=".DataSaveDemoActivity" />
         <activity android:name=".WebviewActivity" />
         <activity android:name=".HttpActivity" />
-        <activity android:name=".AsyncHandlerActivity"></activity>
+        <activity android:name=".AsyncHandlerActivity" />
+
+        <service
+            android:name=".Service.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".TestMyServiceActivity"></activity>
     </application>
 
 </manifest>

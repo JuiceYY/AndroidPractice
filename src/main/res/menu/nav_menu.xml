@@ -13,9 +13,9 @@
             android:icon="@drawable/nav_friends"
             android:title="Friends" />
         <item
-            android:id="@+id/nav_location"
+            android:id="@+id/nav_myservice"
             android:icon="@drawable/nav_location"
-            android:title="Location" />
+            android:title="MyService" />
         <item
             android:id="@+id/nav_asynchandler"
             android:icon="@drawable/nav_mail"
