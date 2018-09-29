@@ -1,4 +1,4 @@
-package cn.istary.material;
+package cn.istary.material.Activity;
 
 import android.os.Handler;
 import android.os.Message;
@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import cn.istary.material.R;
 
 public class AsyncHandlerActivity extends AppCompatActivity implements View.OnClickListener {
 

@@ -1,4 +1,4 @@
-package cn.istary.material;
+package cn.istary.material.Activity;
 
 import android.app.Activity;
 

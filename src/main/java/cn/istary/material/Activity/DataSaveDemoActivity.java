@@ -1,11 +1,8 @@
-package cn.istary.material;
+package cn.istary.material.Activity;
 
-import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.ConnectivityManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +15,8 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+
+import cn.istary.material.R;
 
 public class DataSaveDemoActivity extends BaseActivity implements View.OnClickListener{
 

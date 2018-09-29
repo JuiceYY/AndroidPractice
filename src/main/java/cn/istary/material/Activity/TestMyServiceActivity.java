@@ -1,4 +1,4 @@
-package cn.istary.material;
+package cn.istary.material.Activity;
 
 import android.content.ComponentName;
 import android.content.Intent;
@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import cn.istary.material.R;
 import cn.istary.material.Service.MyService;
 
 public class TestMyServiceActivity extends AppCompatActivity implements View.OnClickListener{

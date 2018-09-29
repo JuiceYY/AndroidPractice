@@ -1,4 +1,4 @@
-package cn.istary.material;
+package cn.istary.material.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,12 +7,12 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.MenuItem;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+
+import cn.istary.material.R;
 
 public class DrawerActivity extends BaseActivity implements View.OnClickListener {
 
@@ -57,7 +57,9 @@ public class DrawerActivity extends BaseActivity implements View.OnClickListener
                     case R.id.nav_myservice:
                         Intent intent3 = new Intent(DrawerActivity.this, TestMyServiceActivity.class);
                         startActivity(intent3);
-
+                    case R.id.nav_notification:
+                        Intent intent4 = new Intent(DrawerActivity.this, NotificationActivity.class);
+                        startActivity(intent4);
                     default:
                         drawerLayout.closeDrawers();
                         break;
