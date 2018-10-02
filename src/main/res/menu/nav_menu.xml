@@ -26,5 +26,8 @@
             android:title="ForceOffline" />
         <item android:id="@+id/nav_datasave_demo"
             android:title="@string/datasave_demo"/>
+
+        <item android:id="@+id/nav_download"
+            android:title="Download"/>
     </group>
 </menu>

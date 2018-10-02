@@ -60,6 +60,9 @@ public class DrawerActivity extends BaseActivity implements View.OnClickListener
                     case R.id.nav_notification:
                         Intent intent4 = new Intent(DrawerActivity.this, NotificationActivity.class);
                         startActivity(intent4);
+                    case R.id.nav_download:
+                        Intent intent5 = new Intent(DrawerActivity.this, DownloadActivity.class);
+                        startActivity(intent5);
                     default:
                         drawerLayout.closeDrawers();
                         break;
