@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 
 import cn.istary.material.R;
+import cn.istary.material.Test.Main2Activity;
 
 public class DrawerActivity extends BaseActivity implements View.OnClickListener {
 
@@ -63,6 +64,9 @@ public class DrawerActivity extends BaseActivity implements View.OnClickListener
                     case R.id.nav_download:
                         Intent intent5 = new Intent(DrawerActivity.this, DownloadActivity.class);
                         startActivity(intent5);
+                    case R.id.nav_dagger:
+                        Intent intent6 = new Intent(DrawerActivity.this, Main2Activity.class);
+                        startActivity(intent6);
                     default:
                         drawerLayout.closeDrawers();
                         break;
