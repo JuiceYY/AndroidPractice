@@ -50,7 +50,8 @@
             android:exported="true" />
 
         <activity android:name=".Activity.DownloadActivity" />
-        <activity android:name=".Test.Main2Activity"></activity>
+        <activity android:name=".Test.Main2Activity" />
+        <activity android:name=".Activity.FragmentTest"></activity>
     </application>
 
 </manifest>

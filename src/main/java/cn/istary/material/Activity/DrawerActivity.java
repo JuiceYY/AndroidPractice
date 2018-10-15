@@ -67,6 +67,9 @@ public class DrawerActivity extends BaseActivity implements View.OnClickListener
                     case R.id.nav_dagger:
                         Intent intent6 = new Intent(DrawerActivity.this, Main2Activity.class);
                         startActivity(intent6);
+                    case R.id.nav_fragment:
+                        Intent intent7 = new Intent(DrawerActivity.this, FragmentTest.class);
+                        startActivity(intent7);
                     default:
                         drawerLayout.closeDrawers();
                         break;

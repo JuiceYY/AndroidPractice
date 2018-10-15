@@ -31,6 +31,9 @@
             android:title="Download"/>
         <item
             android:id="@+id/nav_dagger"
-            android:title="Item" />
+            android:title="dagger" />
+        <item
+            android:id="@+id/nav_fragment"
+            android:title="fragment"/>
     </group>
 </menu>
