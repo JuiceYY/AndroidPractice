@@ -51,7 +51,8 @@
 
         <activity android:name=".Activity.DownloadActivity" />
         <activity android:name=".Test.Main2Activity" />
-        <activity android:name=".Activity.FragmentTest"></activity>
+        <activity android:name=".Activity.FragmentTest" />
+        <activity android:name=".Activity.EventbusTest"></activity>
     </application>
 
 </manifest>

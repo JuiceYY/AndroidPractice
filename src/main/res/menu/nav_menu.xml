@@ -35,5 +35,10 @@
         <item
             android:id="@+id/nav_fragment"
             android:title="fragment"/>
+        <item
+            android:id="@+id/nav_eventbustest"
+            android:title="eventbustest"/>
+
+
     </group>
 </menu>

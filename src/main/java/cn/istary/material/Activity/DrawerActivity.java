@@ -7,6 +7,7 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
+import android.util.EventLog;
 import android.view.MenuItem;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -70,6 +71,9 @@ public class DrawerActivity extends BaseActivity implements View.OnClickListener
                     case R.id.nav_fragment:
                         Intent intent7 = new Intent(DrawerActivity.this, FragmentTest.class);
                         startActivity(intent7);
+                    case R.id.nav_eventbustest:
+                        Intent intent8 = new Intent(DrawerActivity.this, EventbusTest.class);
+                        startActivity(intent8);
                     default:
                         drawerLayout.closeDrawers();
                         break;
