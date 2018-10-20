@@ -52,7 +52,10 @@
         <activity android:name=".Activity.DownloadActivity" />
         <activity android:name=".Test.Main2Activity" />
         <activity android:name=".Activity.FragmentTest" />
-        <activity android:name=".Activity.EventbusTest"></activity>
+        <activity android:name=".Activity.EventbusTest" />
+        <activity android:name=".MyView.ViewBaseActivity" />
+        <activity android:name=".MyView.MeasureViewActivity" />
+        <activity android:name=".MyView.MyTextViewActivity"></activity>
     </application>
 
 </manifest>

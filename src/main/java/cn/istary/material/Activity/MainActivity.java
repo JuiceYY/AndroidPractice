@@ -7,45 +7,53 @@ import android.content.IntentFilter;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.Toast;
 
+import cn.istary.material.MyView.ViewBaseActivity;
 import cn.istary.material.R;
 
-public class MainActivity extends BaseActivity{
+public class MainActivity extends BaseActivity implements View.OnClickListener{
 
     private IntentFilter intentFilter;
     private NetworkChangeReceiver networkChangeReceiver;
+
+    private Button button1;
+    private Button button2;
+    private Button button3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        initView();
+
+        //网络状态变化broadcast receiver
+        networkChangeReceiver = new NetworkChangeReceiver();
+        registerReceiver(networkChangeReceiver, intentFilter);
+
+    }
+
+    private void initView(){
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         intentFilter = new IntentFilter();
         intentFilter.addAction("android.net.coon.CONNECTIVITY_CHANGE");
-        networkChangeReceiver = new NetworkChangeReceiver();
-        registerReceiver(networkChangeReceiver, intentFilter);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-                Toast.makeText(MainActivity.this, "go to drawer activity", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(MainActivity.this, DrawerActivity.class);
-                startActivity(intent);
+        button1 = findViewById(R.id.mainactivity_button1);
+        button2 = findViewById(R.id.mainactivity_button2);
+        button3 = findViewById(R.id.mainactivity_button3);
 
+        button1.setOnClickListener(this);
+        button2.setOnClickListener(this);
+        button3.setOnClickListener(this);
 
-            }
-        });
     }
 
     @Override
@@ -77,6 +85,24 @@ public class MainActivity extends BaseActivity{
         unregisterReceiver(networkChangeReceiver);
     }
 
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.mainactivity_button1:
+                Intent intent1 = new Intent(MainActivity.this, DrawerActivity.class);
+                startActivity(intent1);
+                break;
+            case R.id.mainactivity_button2:
+                Intent intent2 = new Intent(MainActivity.this, ViewBaseActivity.class);
+                startActivity(intent2);
+                break;
+
+            case R.id.mainactivity_button3:
+                Toast.makeText(MainActivity.this, getString(R.string.activity_main_toast_forbutton3).toString(), Toast.LENGTH_SHORT).show();
+                break;
+        }
+    }
+
     class NetworkChangeReceiver extends BroadcastReceiver{
 
         @Override
@@ -91,4 +117,6 @@ public class MainActivity extends BaseActivity{
             }
         }
     }
+
+
 }

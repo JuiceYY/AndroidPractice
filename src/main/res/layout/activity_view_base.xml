@@ -4,57 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.MainActivity">
-
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:title="Material"/>
-
-    </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_main" />
+    tools:context=".MyView.ViewBaseActivity">
 
     <Button
-        android:id="@+id/mainactivity_button1"
+        android:id="@+id/activity_view_base_button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/activity_main_button1"
+        android:text="@string/activity_view_base_button1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/mainactivity_button2"
+        android:id="@+id/activity_view_base_button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/activity_main_button2"
+        android:text="@string/activity_view_base_button2"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/mainactivity_button3"
-        app:layout_constraintStart_toEndOf="@+id/mainactivity_button1" />
+        app:layout_constraintEnd_toStartOf="@+id/activity_view_base_button3"
+        app:layout_constraintStart_toEndOf="@+id/activity_view_base_button1" />
 
     <Button
-        android:id="@+id/mainactivity_button3"
+        android:id="@+id/activity_view_base_button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/activity_main_button3"
+        android:text="@string/activity_view_base_button3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-
 </android.support.constraint.ConstraintLayout>
-

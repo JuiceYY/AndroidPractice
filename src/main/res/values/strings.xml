@@ -17,4 +17,15 @@
     </string>
     <string name="datasave_demo">"DatasaveDemo"</string>
     <string name="olderlife">"The Older's Life Now is:"</string>
+    <string name="activity_main_welcome">"我的代码练习app"</string>
+    <string name="activity_main_button1"> "第一行代码" </string>
+    <string name="activity_main_button2">"自定义view"</string>
+    <string name="activity_main_button3">"敬请期待"</string>
+    <string name="activity_main_toast_forbutton3">"敬请期待"</string>
+
+    <string name="activity_view_base_button1">"自定义控件1"</string>
+    <string name="activity_view_base_button2">"拓展textview"</string>
+    <string name="activity_view_base_button3">"自定义控件3"</string>
+    <string name="activity_view_base_button4">"listview"</string>
+
 </resources>
