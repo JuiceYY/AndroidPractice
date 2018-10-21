@@ -40,7 +40,8 @@ public class ViewBaseActivity extends AppCompatActivity implements View.OnClickL
                 startActivity(intent2);
                 break;
             case R.id.activity_view_base_button3:
-
+                Intent intent3 = new Intent(ViewBaseActivity.this, TopBarActivity.class);
+                startActivity(intent3);
                 break;
         }
     }

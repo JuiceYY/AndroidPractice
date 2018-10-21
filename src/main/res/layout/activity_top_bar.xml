@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--需要加入自己的命名空间 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyView.TopBarActivity">
+
+    <cn.istary.material.MyView.TopBar
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        custom:leftBackground="#0000ff"
+        custom:leftText="Back"
+        custom:leftTextColor="#ffffff"
+        custom:rightBackground="#0000ff"
+        custom:rightText="More"
+        custom:rightTextColor="#ffffff"
+        custom:titleText="自定义标题"
+        custom:titleTextColor="#123412"
+        custom:titleTextSize="15dp">
+    </cn.istary.material.MyView.TopBar>
+
+</RelativeLayout>

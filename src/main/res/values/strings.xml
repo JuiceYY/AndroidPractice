@@ -25,7 +25,7 @@
 
     <string name="activity_view_base_button1">"自定义控件1"</string>
     <string name="activity_view_base_button2">"拓展textview"</string>
-    <string name="activity_view_base_button3">"自定义控件3"</string>
+    <string name="activity_view_base_button3">"组合TopBar"</string>
     <string name="activity_view_base_button4">"listview"</string>
 
 </resources>

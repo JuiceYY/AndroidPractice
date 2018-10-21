@@ -27,12 +27,9 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity android:name=".Activity.DrawerActivity" />
-        <activity android:name=".Activity.LoginActivity">
-
-        </activity>
+        <activity android:name=".Activity.LoginActivity"></activity>
         <activity android:name=".Activity.DataSaveDemoActivity" />
         <activity android:name=".Activity.WebviewActivity" />
         <activity android:name=".Activity.HttpActivity" />
@@ -58,7 +55,8 @@
         <activity android:name=".Activity.EventbusTest" />
         <activity android:name=".MyView.ViewBaseActivity" />
         <activity android:name=".MyView.MeasureViewActivity" />
-        <activity android:name=".MyView.MyTextViewActivity"></activity>
+        <activity android:name=".MyView.MyTextViewActivity" />
+        <activity android:name=".MyView.TopBarActivity"></activity>
     </application>
 
 </manifest>
