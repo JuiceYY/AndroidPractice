@@ -3,10 +3,11 @@ package cn.istary.material.MyView;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.LinearGradient;
+import android.graphics.Matrix;
 import android.graphics.Paint;
-import android.graphics.Rect;
+import android.graphics.Shader;
 import android.util.AttributeSet;
-import android.widget.TextView;
 
 public class MyTextView extends android.support.v7.widget.AppCompatTextView {
 
@@ -24,20 +25,33 @@ public class MyTextView extends android.support.v7.widget.AppCompatTextView {
 
     private Paint mPaint1;
     private Paint mPaint2;
+    private Paint mPaint;
+    private int mViewWidth;
+    private int mViewHeight;
+    private Matrix mGradientMatrix;
+    private LinearGradient linearGradient;
+    private int mTranslate = 0;
 
     public MyTextView(Context context) {
         //在构造方法中初始化画笔等工具
         super(context);
-        mPaint1 = new Paint();
-        mPaint1.setColor(getResources().getColor(android.R.color.holo_blue_light));
-        mPaint1.setStyle(Paint.Style.FILL);
-        mPaint2 = new Paint();
-        mPaint2.setColor(Color.YELLOW);
-        mPaint2.setStyle(Paint.Style.FILL);
+        initPaint();
+        initVar();
     }
 
     public MyTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        initPaint();
+        initVar();
+    }
+
+    public MyTextView(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        initPaint();
+        initVar();
+    }
+
+    private void initPaint(){
         mPaint1 = new Paint();
         mPaint1.setColor(getResources().getColor(android.R.color.holo_blue_light));
         mPaint1.setStyle(Paint.Style.FILL);
@@ -46,25 +60,48 @@ public class MyTextView extends android.support.v7.widget.AppCompatTextView {
         mPaint2.setStyle(Paint.Style.FILL);
     }
 
-    public MyTextView(Context context, AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
-        mPaint1 = new Paint();
-        mPaint1.setColor(getResources().getColor(android.R.color.holo_blue_light));
-        mPaint1.setStyle(Paint.Style.FILL);
-        mPaint2 = new Paint();
-        mPaint2.setColor(Color.YELLOW);
-        mPaint2.setStyle(Paint.Style.FILL);
+    private void initVar(){
+        this.mViewWidth = getMeasuredWidth();
+        this.mViewHeight = getMeasuredHeight();
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         canvas.drawRect(0, 0, getMeasuredWidth(), getMeasuredHeight(), mPaint1);//外层矩形
-        canvas.drawRect(10, 10, getMeasuredWidth()-10, getMeasuredHeight()-10, mPaint2);//内层矩形
+        canvas.drawRect(8, 8, getMeasuredWidth()-8, getMeasuredHeight()-8, mPaint2);//内层矩形
         canvas.save();
-        canvas.translate(10,0);//绘制文字前平移10像素
+        //yxcanvas.translate(10,0);//绘制文字前平移10像素
 
         super.onDraw(canvas);//父类显示文字
 
         canvas.restore();
+
+        if(mGradientMatrix != null){
+            mTranslate += mViewWidth/5;
+            if(mTranslate > 2*mViewWidth){
+                mTranslate = -mViewWidth;
+            }
+            mGradientMatrix.setTranslate(mTranslate, 0);
+            linearGradient.setLocalMatrix(mGradientMatrix);
+            postInvalidateDelayed(100);
+        }
+    }
+
+    @Override
+    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+        super.onSizeChanged(w, h, oldw, oldh);
+        if(mViewWidth == 0){
+            mViewWidth = getMeasuredWidth();
+            if(mViewWidth > 0){
+                mPaint = getPaint();
+                linearGradient = new LinearGradient(0, 0, mViewWidth, 0, new int[]{
+                                                                            Color.BLUE,
+                                                                            0xffffffff,
+                                                                            Color.BLUE}, null,
+                        Shader.TileMode.CLAMP);
+                mPaint.setShader(linearGradient);
+                mGradientMatrix = new Matrix();
+            }
+        }
     }
 }

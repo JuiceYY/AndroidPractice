@@ -4,12 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MyView.MyTextViewActivity">
 
     <cn.istary.material.MyView.MyTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="这是自定义Textview"/>
+        android:text="这是自定义Textview"
+        android:textSize="30dp"
+        />
 
 
 </android.support.constraint.ConstraintLayout>
