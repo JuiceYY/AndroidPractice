@@ -29,7 +29,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activity.DrawerActivity" />
-        <activity android:name=".Activity.LoginActivity"></activity>
+        <activity android:name=".Activity.LoginActivity" />
         <activity android:name=".Activity.DataSaveDemoActivity" />
         <activity android:name=".Activity.WebviewActivity" />
         <activity android:name=".Activity.HttpActivity" />
@@ -56,7 +56,10 @@
         <activity android:name=".MyView.ViewBaseActivity" />
         <activity android:name=".MyView.MeasureViewActivity" />
         <activity android:name=".MyView.MyTextViewActivity" />
-        <activity android:name=".MyView.TopBarActivity"></activity>
+        <activity android:name=".MyView.TopBarActivity" />
+        <activity android:name=".Activity.ListViewTest1Activity" />
+        <activity android:name=".Activity.RecyclerView1Activity" />
+        <activity android:name=".Activity.RxjavaTestActivity"></activity>
     </application>
 
 </manifest>

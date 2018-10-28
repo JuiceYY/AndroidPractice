@@ -38,7 +38,11 @@
         <item
             android:id="@+id/nav_eventbustest"
             android:title="eventbustest"/>
-
-
+        <item
+            android:id="@+id/nav_listview"
+            android:title="listview"/>
+        <item
+            android:id="@+id/nav_recyclerview1"
+            android:title="recyclerview1"/>
     </group>
 </menu>

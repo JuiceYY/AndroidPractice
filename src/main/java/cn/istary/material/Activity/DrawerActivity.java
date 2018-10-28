@@ -53,27 +53,43 @@ public class DrawerActivity extends BaseActivity implements View.OnClickListener
                     case R.id.nav_datasave_demo:
                         Intent intent1 = new Intent(DrawerActivity.this, DataSaveDemoActivity.class);
                         startActivity(intent1);
+                        break;
                     case R.id.nav_asynchandler:
                         Intent intent2 = new Intent(DrawerActivity.this, AsyncHandlerActivity.class);
                         startActivity(intent2);
+                        break;
                     case R.id.nav_myservice:
                         Intent intent3 = new Intent(DrawerActivity.this, TestMyServiceActivity.class);
                         startActivity(intent3);
+                        break;
                     case R.id.nav_notification:
                         Intent intent4 = new Intent(DrawerActivity.this, NotificationActivity.class);
                         startActivity(intent4);
+                        break;
                     case R.id.nav_download:
                         Intent intent5 = new Intent(DrawerActivity.this, DownloadActivity.class);
                         startActivity(intent5);
+                        break;
                     case R.id.nav_dagger:
                         Intent intent6 = new Intent(DrawerActivity.this, Main2Activity.class);
                         startActivity(intent6);
+                        break;
                     case R.id.nav_fragment:
                         Intent intent7 = new Intent(DrawerActivity.this, FragmentTest.class);
                         startActivity(intent7);
+                        break;
                     case R.id.nav_eventbustest:
                         Intent intent8 = new Intent(DrawerActivity.this, EventbusTest.class);
                         startActivity(intent8);
+                        break;
+                    case R.id.nav_listview:
+                        Intent intent9 = new Intent(DrawerActivity.this, ListViewTest1Activity.class);
+                        startActivity(intent9);
+                        break;
+                    case R.id.nav_recyclerview1:
+                        Intent intent10 = new Intent(DrawerActivity.this, RecyclerView1Activity.class);
+                        startActivity(intent10);
+                        break;
                     default:
                         drawerLayout.closeDrawers();
                         break;
