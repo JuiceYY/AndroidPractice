@@ -25,7 +25,7 @@ public class RecyclerView1Activity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycler_view1);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        FruitRecyclerAdapter adapter = new FruitRecyclerAdapter(fruitList);
+        FruitRecyclerAdapter adapter = new FruitRecyclerAdapter(fruitList, this);
         recyclerView.setAdapter(adapter);
     }
 
