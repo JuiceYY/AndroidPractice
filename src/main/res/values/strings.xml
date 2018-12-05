@@ -20,12 +20,14 @@
     <string name="activity_main_welcome">"我的代码练习app"</string>
     <string name="activity_main_button1"> "第一行代码" </string>
     <string name="activity_main_button2">"自定义view"</string>
-    <string name="activity_main_button3">"敬请期待"</string>
+    <string name="activity_main_button3">"慕课网练习"</string>
     <string name="activity_main_toast_forbutton3">"敬请期待"</string>
 
     <string name="activity_view_base_button1">"自定义控件1"</string>
     <string name="activity_view_base_button2">"拓展textview"</string>
     <string name="activity_view_base_button3">"组合TopBar"</string>
     <string name="activity_view_base_button4">"listview"</string>
+    <string name="imoocnews_item_default_title">title</string>
+    <string name="imoocnews_item_default_content">content</string>
 
 </resources>

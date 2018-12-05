@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/imoocnews_item"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imoocnews_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:paddingLeft="4dp"
+        android:src = "@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/imoocnews_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/imoocnews_item_default_title"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/imoocnews_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:text="@string/imoocnews_item_default_content"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

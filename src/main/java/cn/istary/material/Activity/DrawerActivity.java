@@ -7,7 +7,6 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
-import android.util.EventLog;
 import android.view.MenuItem;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -34,7 +33,7 @@ public class DrawerActivity extends BaseActivity implements View.OnClickListener
         ActionBar actionBar = getSupportActionBar();
         if(actionBar != null){
             actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_menu1);
         }
 
         button.setOnClickListener(this);

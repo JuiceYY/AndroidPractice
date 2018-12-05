@@ -59,7 +59,8 @@
         <activity android:name=".MyView.TopBarActivity" />
         <activity android:name=".Activity.ListViewTest1Activity" />
         <activity android:name=".Activity.RecyclerView1Activity" />
-        <activity android:name=".Activity.RxjavaTestActivity"></activity>
+        <activity android:name=".Activity.RxjavaTestActivity" />
+        <activity android:name=".imooc.ui.ImoocCourse"></activity>
     </application>
 
 </manifest>

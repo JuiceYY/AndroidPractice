@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import cn.istary.material.MyView.ViewBaseActivity;
 import cn.istary.material.R;
+import cn.istary.material.imooc.ui.ImoocCourse;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener{
 
@@ -98,7 +99,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
                 break;
 
             case R.id.mainactivity_button3:
-                Toast.makeText(MainActivity.this, getString(R.string.activity_main_toast_forbutton3).toString(), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this, getString(R.string.activity_main_toast_forbutton3).toString(), Toast.LENGTH_SHORT).show();
+                Intent intent3 = new Intent(MainActivity.this, ImoocCourse.class);
+                startActivity(intent3);
                 break;
         }
     }
